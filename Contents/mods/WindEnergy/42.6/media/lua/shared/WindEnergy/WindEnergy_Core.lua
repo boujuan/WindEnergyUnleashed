@@ -204,3 +204,5 @@ end
 
 -- Hook into game loading
 -- Events.OnGameStart.Add(WindEnergy.LoadSandboxOptions) -- Moved to Init file
+
+return WindEnergy -- Add this line

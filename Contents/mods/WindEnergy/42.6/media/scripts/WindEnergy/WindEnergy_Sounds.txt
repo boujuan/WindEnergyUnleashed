@@ -1,0 +1,62 @@
+/* WindEnergyUnleashed Sound Definitions */
+module WindEnergy /* Added module definition */
+{
+    sound WindTurbineSpinLoopSlow
+    {
+        category = WindTurbine, // Added category
+        loop = true,
+        is3D = true, // Assuming 3D positioning is desired
+        clip {
+            file = WE_TurbineSpinLoopSlow.wav,
+            volume = 0.6,
+            pitch = 1.0,
+            distanceMax = 50, // Added distance example
+        },
+    }
+
+    sound WindTurbineSpinLoopFast
+    {
+        category = WindTurbine, // Added category
+        loop = true,
+        is3D = true,
+        clip {
+            file = WE_TurbineSpinLoopFast.wav,
+            volume = 0.8,
+            pitch = 1.2,
+            distanceMax = 60, // Added distance example
+        },
+    }
+
+    sound WindTurbinePlacement
+    {
+        category = WindTurbine, // Added category
+        is3D = true,
+        clip {
+            file = WE_TurbinePlacement.wav,
+            volume = 1.0,
+            distanceMax = 20, // Added distance example
+        },
+    }
+
+    sound WindTurbineRepair
+    {
+        category = WindTurbine, // Added category
+        is3D = true,
+        clip {
+            file = WE_TurbineRepair.wav,
+            volume = 0.8,
+            distanceMax = 15, // Added distance example
+        },
+    }
+
+    sound BladeSwap
+    {
+        category = WindTurbine, // Added category
+        is3D = true,
+        clip {
+            file = WE_BladeSwap.wav,
+            volume = 0.7,
+            distanceMax = 15, // Added distance example
+        },
+    }
+}

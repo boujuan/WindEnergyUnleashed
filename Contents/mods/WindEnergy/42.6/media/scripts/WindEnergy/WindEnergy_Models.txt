@@ -1,0 +1,66 @@
+module WindEnergy
+{
+     model WoodenTurbineBaseItem
+     {
+          mesh = WE_WoodBase,
+          texture = WE_WoodBaseTex,
+          scale = 0.6,
+          static = true,
+     }
+
+     model WoodenTurbineNacelleItem
+     {
+          mesh = WE_WoodNacelle,
+          texture = WE_WoodNacelleTex,
+          scale = 0.6,
+          static = true,
+     }
+
+     model MetalTurbineBaseItem
+     {
+          mesh = WE_MetalBase,
+          texture = WE_MetalBaseTex,
+          scale = 0.7,
+          static = true,
+     }
+
+     model MetalTurbineNacelleItem
+     {
+          mesh = WE_MetalNacelle,
+          texture = WE_MetalNacelleTex,
+          scale = 0.7,
+          static = true,
+     }
+
+     model WoodenTurbineBladesItem
+     {
+          mesh = WE_WoodBlades,
+          texture = WE_WoodBladeTex,
+          scale = 0.5,
+          static = true,
+     }
+
+     model AdvancedTurbineBladesItem
+     {
+          mesh = WE_AdvBlades,
+          texture = WE_AdvBladeTex,
+          scale = 0.7,
+          static = true,
+     }
+
+     model BigWoodenTurbineBladesItem
+     {
+          mesh = WE_WoodBlades,
+          texture = WE_WoodBladeTex,
+          scale = 0.7,
+          static = true,
+     }
+
+     model RepurposedGeneratorItem
+     {
+          mesh = WE_RepurposedGen,
+          texture = WE_GenTex,
+          scale = 0.7,
+          static = true,
+     }
+}

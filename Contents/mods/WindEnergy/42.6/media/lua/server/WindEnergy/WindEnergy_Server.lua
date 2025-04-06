@@ -1,13 +1,13 @@
 -- WindEnergyUnleashed Server-Side Logic
 -- Handles turbine placement, power generation, state saving/loading, grid connections, interactions
 
-require "shared/WindEnergy_Core" -- Ensure core is loaded
+local WindEnergy = require "WindEnergy/WindEnergy_Core" -- Get reference to core table
 
 require "Map/SGlobalObjectSystem"
 require "Map/SGlobalObject"
 require "Map/MapObjects" -- Needed for IsoObject creation
 
-WindEnergy.Server = WindEnergy.Server or {}
+WindEnergy.Server = WindEnergy.Server or {} -- Define server-specific sub-table
 
 -- Forward declare
 local WindTurbineObject_Server

@@ -1,11 +1,11 @@
 -- WindEnergyUnleashed Client-Side Logic
 -- Handles animations, UI (tooltips, context menus), timed actions, visual effects
 
-require "shared/WindEnergy_Core" -- Ensure core is loaded
+local WindEnergy = require "WindEnergy/WindEnergy_Core" -- Get reference to core table
 require "TimedActions/ISBaseTimedAction"
-require "client/WEU_TurbineStatusWindow" -- Added for the status UI
+require "WindEnergy/WEU_TurbineStatusWindow" -- Added for the status UI
 
-WindEnergy.Client = WindEnergy.Client or {}
+WindEnergy.Client = WindEnergy.Client or {} -- Define client-specific sub-table
 
 local K = WindEnergy.ModDataKeys -- Alias for brevity
 

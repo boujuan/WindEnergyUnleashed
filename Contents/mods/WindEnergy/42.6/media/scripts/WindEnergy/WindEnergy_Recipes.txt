@@ -1,5 +1,3 @@
--- WindEnergyUnleashed Recipe Definitions (Component-Based)
-
 module WindEnergy
 {
     /* Component Crafting Recipes */

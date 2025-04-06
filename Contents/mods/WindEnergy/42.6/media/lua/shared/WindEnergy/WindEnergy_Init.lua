@@ -1,10 +1,10 @@
 -- WindEnergyUnleashed Initialization
--- This file should be loaded LAST by mod.info to ensure all definitions exist.
 
--- Ensure other files are loaded (require caches results, but good for clarity)
-require "shared/WindEnergy_Core"
-require "client/WindEnergy_Client" -- Load client definitions
-require "server/WindEnergy_Server" -- Load server definitions
+-- Get reference to the core table
+local WindEnergy = require "WindEnergy/WindEnergy_Core"
+
+-- Client and Server files are loaded automatically by the game.
+-- We just need to ensure the Core is loaded before running init logic.
 
 local function InitializeWEU()
     -- Check if already initialized (protection against multiple event triggers)
