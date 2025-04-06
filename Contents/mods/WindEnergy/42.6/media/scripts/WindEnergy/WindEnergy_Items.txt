@@ -98,12 +98,8 @@ module WindEnergy
         DisplayCategory = Electronics, // Added Category
         Icon = RepurposedGen, // Corrected Icon Ref
         Weight = 10.0, // Reduced weight, 40 seemed excessive for a component
-        ConditionMax = 100, // Keep Condition
-        MetalValue = 50, // Reduced MetalValue, 500 is huge
-        RequiresEquippedBothHands = TRUE, // Keep
-        Tooltip = A generator modified for use in wind turbines. Can be crafted.,
-        Tags = Component;Generator;HasMetal;ShowCondition, // Adjusted Tags
-        WorldStaticModel = RepurposedGeneratorItem, // Use WorldStaticModel for item model
+        ConditionMax = 100, // Keep Condition, Added comma back
+        // Temporarily removed MetalValue, RequiresEquippedBothHands, Tooltip, Tags, WorldStaticModel
     }
 
     item SmallWoodenTurbine
