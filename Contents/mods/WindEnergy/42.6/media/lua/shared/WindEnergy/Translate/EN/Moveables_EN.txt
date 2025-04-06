@@ -1,0 +1,4 @@
+Moveables_EN = {
+    Small_Wooden_Wind_Turbine = "Small Wooden Wind Turbine",
+    Large_Metal_Wind_Turbine = "Large Metal Wind Turbine",
+}

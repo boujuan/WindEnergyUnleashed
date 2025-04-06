@@ -5,11 +5,11 @@ module WindEnergy
     item WoodenTurbineBase
     {
         Type = Normal,
-        DisplayName = Wooden Turbine Base,
+        DisplayName = ItemName_WindEnergy.WoodenTurbineBase,
         DisplayCategory = Engineering, // Added Category
         Icon = WoodBase, // Corrected Icon Ref (Game adds Item_)
         Weight = 5.0,
-        Tooltip = The basic structural base for a small wooden wind turbine.,
+        Tooltip = Tooltip_Item_WoodenTurbineBase,
         WorldStaticModel = WoodenTurbineBaseItem, // Corrected Model Ref
         Tags = Component;Wood, // Added Tags
         MetalValue = 5, // Added MetalValue (nails)
@@ -18,11 +18,12 @@ module WindEnergy
     item WoodenTurbineNacelle
     {
         Type = Normal,
-        DisplayName = Wooden Turbine Nacelle,
+        DisplayName = ItemName_WindEnergy.WoodenTurbineNacelle,
         DisplayCategory = Engineering, // Added Category
         Icon = WoodNacelle, // Corrected Icon Ref
-        Weight = 12.0, /* Adjusted weight (includes generator now) */ // Corrected Comment
-        Tooltip = The nacelle assembly for a small wooden wind turbine, containing the generator and rotational mechanism.,
+        // Adjusted weight (includes generator now)
+        Weight = 12.0,
+        Tooltip = Tooltip_Item_WoodenTurbineNacelle,
         WorldStaticModel = WoodenTurbineNacelleItem, // Corrected Model Ref
         Tags = Component;Wood;HasMetal, // Added Tags
         MetalValue = 20, // Added MetalValue (screws, bar, generator)
@@ -31,11 +32,11 @@ module WindEnergy
     item MetalTurbineBase
     {
         Type = Normal,
-        DisplayName = Metal Turbine Base,
+        DisplayName = ItemName_WindEnergy.MetalTurbineBase,
         DisplayCategory = Engineering, // Added Category
         Icon = MetalBase, // Corrected Icon Ref
         Weight = 15.0,
-        Tooltip = The sturdy metal base structure for a large wind turbine.,
+        Tooltip = Tooltip_Item_MetalTurbineBase,
         WorldStaticModel = MetalTurbineBaseItem, // Corrected Model Ref
         Tags = Component;HasMetal, // Added Tags
         MetalValue = 40, // Added MetalValue (sheets, screws)
@@ -44,11 +45,12 @@ module WindEnergy
     item MetalTurbineNacelle
     {
         Type = Normal,
-        DisplayName = Metal Turbine Nacelle,
+        DisplayName = ItemName_WindEnergy.MetalTurbineNacelle,
         DisplayCategory = Engineering, // Added Category
         Icon = MetalNacelle, // Corrected Icon Ref
-        Weight = 25.0, /* Adjusted weight (includes generator now) */ // Corrected Comment
-        Tooltip = The nacelle assembly for a large metal wind turbine, containing the generator and rotational mechanism.,
+        // Adjusted weight (includes generator now)
+        Weight = 25.0,
+        Tooltip = Tooltip_Item_MetalTurbineNacelle,
         WorldStaticModel = MetalTurbineNacelleItem, // Corrected Model Ref
         Tags = Component;HasMetal, // Added Tags
         MetalValue = 60, // Added MetalValue (sheets, screws, bars, generator)
@@ -57,11 +59,11 @@ module WindEnergy
     item WoodenTurbineBlades
     {
         Type = Normal,
-        DisplayName = Wooden Turbine Blades,
+        DisplayName = ItemName_WindEnergy.WoodenTurbineBlades,
         DisplayCategory = Components, // Added Category
         Icon = WoodBlade, // Corrected Icon Ref
         Weight = 3.0,
-        Tooltip = A set of craftable wooden blades for a small wind turbine.,
+        Tooltip = Tooltip_Item_WoodenTurbineBlades,
         WorldStaticModel = WoodenTurbineBladesItem, // Corrected Model Ref
         Tags = Component;Wood, // Added Tags
     }
@@ -69,11 +71,11 @@ module WindEnergy
     item AdvancedTurbineBlades
     {
         Type = Normal,
-        DisplayName = Advanced Turbine Blades,
+        DisplayName = ItemName_WindEnergy.AdvancedTurbineBlades,
         DisplayCategory = Components, // Added Category
         Icon = AdvBlade, // Corrected Icon Ref
         Weight = 5.0,
-        Tooltip = High-efficiency turbine blades. Cannot be crafted.,
+        Tooltip = Tooltip_Item_AdvancedTurbineBlades,
         WorldStaticModel = AdvancedTurbineBladesItem, // Corrected Model Ref
         Tags = Component;HasMetal, // Added Tags (Assuming composite involves some metal/advanced parts)
         MetalValue = 10, // Added arbitrary MetalValue
@@ -82,11 +84,12 @@ module WindEnergy
     item BigWoodenTurbineBlades
     {
         Type = Normal,
-        DisplayName = Big Wooden Turbine Blades,
+        DisplayName = ItemName_WindEnergy.BigWoodenTurbineBlades,
         DisplayCategory = Components, // Added Category
         Icon = WoodBlade, // Corrected Icon Ref (Using same icon as small for now)
-        Weight = 6.0, /* Heavier than small blades */ // Corrected Comment
-        Tooltip = A set of larger, craftable wooden blades designed for bigger wind turbines.,
+        // Heavier than small blades
+        Weight = 6.0,
+        Tooltip = Tooltip_Item_BigWoodenTurbineBlades,
         WorldStaticModel = BigWoodenTurbineBladesItem, // Corrected Model Ref
         Tags = Component;Wood, // Added Tags
     }
@@ -94,22 +97,25 @@ module WindEnergy
     item RepurposedGenerator
     {
         Type = Normal,
-        DisplayName = Repurposed Generator,
+        DisplayName = ItemName_WindEnergy.RepurposedGenerator,
         DisplayCategory = Electronics, // Added Category
         Icon = RepurposedGen, // Corrected Icon Ref
         Weight = 10.0, // Reduced weight, 40 seemed excessive for a component
-        ConditionMax = 100, // Keep Condition, Added comma back
-        // Temporarily removed MetalValue, RequiresEquippedBothHands, Tooltip, Tags, WorldStaticModel
+        ConditionMax = 100,
+        MetalValue = 15, // Added placeholder MetalValue
+        Tooltip = Tooltip_Item_RepurposedGenerator,
+        Tags = Component;HasMetal, // Added Tags
+        WorldStaticModel = RepurposedGeneratorItem, // Added Model Ref
     }
 
     item SmallWoodenTurbine
     {
         Type = Moveable, // Correct Type
-        DisplayName = Small Wooden Wind Turbine,
+        DisplayName = ItemName_WindEnergy.SmallWoodenTurbine,
         DisplayCategory = Utilities, // Changed Category
         Icon = SmallTurbine, // Corrected Icon Ref
         Weight = 20.0, // Keep Weight
-        Tooltip = A small, assembled wooden wind turbine. Used in construction.,
+        Tooltip = Tooltip_Item_SmallWoodenTurbine,
         PlaceOneSound = BuildWoodenLow, // Keep Sound
         WorldObjectSprite = WindEnergy_SmallTurbine_0, // Corrected Sprite Ref
         Tags = HeavyItem;HasMetal;IgnoreZombieDensity;ShowCondition, // Added Tags like ISA PowerBank
@@ -119,11 +125,12 @@ module WindEnergy
     item LargeMetalTurbine
     {
         Type = Moveable, // Correct Type
-        DisplayName = Large Metal Wind Turbine,
+        DisplayName = ItemName_WindEnergy.LargeMetalTurbine,
         DisplayCategory = Utilities, // Changed Category
         Icon = LargeTurbine, // Corrected Icon Ref
-        Weight = 58.0, /* Sum of Base + Nacelle + 3*BigBlades (approx) */ // Corrected Comment
-        Tooltip = A large, assembled metal wind turbine. Used in construction.,
+        Weight = 58.0,
+        // Sum of Base + Nacelle + 3*BigBlades (approx)
+        Tooltip = Tooltip_Item_LargeMetalTurbine,
         PlaceOneSound = BuildMetalHigh, // Keep Sound
         WorldObjectSprite = WindEnergy_LargeTurbine_0, // Corrected Sprite Ref
         Tags = HeavyItem;HasMetal;IgnoreZombieDensity;ShowCondition, // Added Tags like ISA PowerBank

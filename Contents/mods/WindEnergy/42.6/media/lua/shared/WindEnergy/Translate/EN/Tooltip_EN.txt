@@ -1,0 +1,12 @@
+Tooltip_EN = {
+    Tooltip_Item_WoodenTurbineBase = "The basic structural base for a small wooden wind turbine.",
+    Tooltip_Item_WoodenTurbineNacelle = "The nacelle assembly for a small wooden wind turbine, containing the generator and rotational mechanism.",
+    Tooltip_Item_MetalTurbineBase = "The sturdy metal base structure for a large wind turbine.",
+    Tooltip_Item_MetalTurbineNacelle = "The nacelle assembly for a large metal wind turbine, containing the generator and rotational mechanism.",
+    Tooltip_Item_WoodenTurbineBlades = "A set of craftable wooden blades for a small wind turbine.",
+    Tooltip_Item_AdvancedTurbineBlades = "High-efficiency turbine blades. Cannot be crafted.",
+    Tooltip_Item_BigWoodenTurbineBlades = "A set of larger, craftable wooden blades designed for bigger wind turbines.",
+    Tooltip_Item_RepurposedGenerator = "A generator modified for use in wind turbines.",
+    Tooltip_Item_SmallWoodenTurbine = "A small, assembled wooden wind turbine. Used in construction.",
+    Tooltip_Item_LargeMetalTurbine = "A large, assembled metal wind turbine. Used in construction.",
+}

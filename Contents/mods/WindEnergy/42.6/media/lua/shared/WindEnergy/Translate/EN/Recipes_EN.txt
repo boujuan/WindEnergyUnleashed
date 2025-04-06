@@ -1,0 +1,11 @@
+Recipes_EN = {
+    Recipe_Repurpose_Generator = "Repurpose Generator",
+    Recipe_Craft_Wooden_Turbine_Base = "Craft Wooden Turbine Base",
+    Recipe_Craft_Wooden_Turbine_Nacelle = "Craft Wooden Turbine Nacelle",
+    Recipe_Craft_Wooden_Turbine_Blades = "Craft Wooden Turbine Blades",
+    Recipe_Craft_Big_Wooden_Turbine_Blades = "Craft Big Wooden Turbine Blades",
+    Recipe_Craft_Metal_Turbine_Base = "Craft Metal Turbine Base",
+    Recipe_Craft_Metal_Turbine_Nacelle = "Craft Metal Turbine Nacelle",
+    Recipe_Construct_Small_Wooden_Turbine = "Construct Small Wooden Turbine",
+    Recipe_Construct_Large_Metal_Turbine = "Construct Large Metal Turbine",
+}
