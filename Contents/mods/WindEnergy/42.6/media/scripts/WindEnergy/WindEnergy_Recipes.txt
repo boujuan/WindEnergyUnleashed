@@ -10,7 +10,7 @@ module WindEnergy
         tags = AnySurfaceCraft,
         inputs {
             item 1 tags[Screwdriver] mode:keep flags[Prop1;MayDegradeLight;NoBrokenItems],
-            item 1 [Base.Generator] mode:destroy flags[NoBrokenItems],
+            item 1 tags[Generator] mode:destroy flags[NoBrokenItems],
         }
         outputs {
             item 1 WindEnergy.RepurposedGenerator,
@@ -54,7 +54,7 @@ module WindEnergy
 
     craftRecipe Recipe_Craft_Wooden_Turbine_Blades
     {
-        timedAction = Craft,
+        timedAction = SharpenStake,
         time = 60,
         category = Carpentry,
         skillRequired = Carpentry:2,
@@ -70,7 +70,7 @@ module WindEnergy
 
      craftRecipe Recipe_Craft_Big_Wooden_Turbine_Blades
     {
-        timedAction = Craft,
+        timedAction = SharpenStake,
         time = 90,
         category = Carpentry,
         skillRequired = Carpentry:4,
@@ -86,7 +86,7 @@ module WindEnergy
 
     craftRecipe Recipe_Craft_Metal_Turbine_Base
     {
-        timedAction = BlowTorch,
+        timedAction = Welding,
         time = 120,
         category = Metalworking,
         skillRequired = MetalWelding:3,
@@ -94,8 +94,9 @@ module WindEnergy
         inputs {
             item 4 [Base.SheetMetal] mode:destroy,
             item 10 [Base.Screws] mode:destroy,
-            item 1 tags[BlowTorch] mode:keep flags[Prop1;MayDegradeLight;NoBrokenItems],
+            item 1 [Base.BlowTorch] mode:keep flags[Prop1;MayDegradeLight;NoBrokenItems],
             item 1 tags[WeldingMask] mode:keep flags[Prop2;NoBrokenItems],
+            item 3 [Base.WeldingRods] mode:destroy,
         }
         outputs {
             item 1 WindEnergy.MetalTurbineBase,
@@ -104,7 +105,7 @@ module WindEnergy
 
     craftRecipe Recipe_Craft_Metal_Turbine_Nacelle
     {
-        timedAction = BlowTorch,
+        timedAction = Welding,
         time = 250,
         category = Metalworking,
         skillRequired = MetalWelding:4;Mechanics:2;Electricity:2,
@@ -114,8 +115,9 @@ module WindEnergy
             item 8 [Base.Screws] mode:destroy,
             item 2 [Base.MetalBar] mode:destroy,
             item 1 [WindEnergy.RepurposedGenerator] mode:destroy,
-            item 1 tags[BlowTorch] mode:keep flags[Prop1;MayDegradeLight;NoBrokenItems],
+            item 1 [Base.BlowTorch] mode:keep flags[Prop1;MayDegradeLight;NoBrokenItems],
             item 1 tags[WeldingMask] mode:keep flags[Prop2;NoBrokenItems],
+            item 2 [Base.WeldingRods] mode:destroy,
         }
         outputs {
             item 1 WindEnergy.MetalTurbineNacelle,
@@ -124,12 +126,10 @@ module WindEnergy
 
     craftRecipe Recipe_Construct_Small_Wooden_Turbine
     {
-        timedAction = MakingCarpentry,
+        timedAction = MakingHammer_Surface,
         time = 200,
         category = Carpentry,
-        buildMenu = Construction,
         needToBeLearn = true,
-        canBuild = 1,
         onCreate = WindEnergy_OnPlaceTurbine,
         skillRequired = Carpentry:3;Mechanics:2,
         autoLearnAll = MetalWelding:6;Mechanics:4;Electricity:3,
@@ -148,12 +148,10 @@ module WindEnergy
 
     craftRecipe Recipe_Construct_Large_Metal_Turbine
     {
-        timedAction = MakingMetalWelding,
+        timedAction = MakingHammer_Surface,
         time = 300,
         category = Metalworking,
-        buildMenu = Construction,
         needToBeLearn = true,
-        canBuild = 1,
         onCreate = WindEnergy_OnPlaceTurbine,
         skillRequired = MetalWelding:5;Mechanics:3,
         metaRecipe = Recipe_Construct_Small_Wooden_Turbine,
@@ -165,8 +163,9 @@ module WindEnergy
             item 3 [WindEnergy.BigWoodenTurbineBlades] mode:destroy,
             item 1 tags[Wrench] mode:keep flags[Prop1;MayDegradeLight;NoBrokenItems],
             item 1 tags[Screwdriver] mode:keep flags[Prop2;MayDegradeLight;NoBrokenItems],
-            item 1 tags[BlowTorch] mode:keep flags[MayDegradeLight;NoBrokenItems],
+            item 1 [Base.BlowTorch] mode:keep flags[MayDegradeLight;NoBrokenItems],
             item 1 tags[WeldingMask] mode:keep flags[NoBrokenItems],
+            item 4 [Base.WeldingRods] mode:destroy,
         }
         outputs {
              item 1 WindEnergy.LargeMetalTurbine,
