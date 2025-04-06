@@ -1,0 +1,24 @@
+Sandbox_EN = {
+    Sandbox_WindEnergy = "Wind Energy Unleashed", -- Page Name
+
+    Sandbox_WindEnergy_Enabled = "Enable Wind Energy Mod",
+    Sandbox_WindEnergy_Enabled_tooltip = "If enabled, wind turbines can be crafted and used.",
+
+    Sandbox_WindEnergy_PowerMultiplier = "Turbine Power Multiplier",
+    Sandbox_WindEnergy_PowerMultiplier_tooltip = "Adjusts the base power output of all wind turbines.",
+
+    Sandbox_WindEnergy_CraftingDifficulty = "Crafting Difficulty",
+    Sandbox_WindEnergy_CraftingDifficulty_tooltip = "Affects the required materials or skill levels for crafting turbines.",
+    Sandbox_WindEnergy_CraftingDifficulty_option1 = "Easy",
+    Sandbox_WindEnergy_CraftingDifficulty_option2 = "Normal",
+    Sandbox_WindEnergy_CraftingDifficulty_option3 = "Hard",
+
+    Sandbox_WindEnergy_WindVariability = "Wind Variability",
+    Sandbox_WindEnergy_WindVariability_tooltip = "Adjusts the randomness and intensity of wind speed/direction changes.",
+
+    Sandbox_WindEnergy_AdvancedPartRarity = "Advanced Part Rarity",
+    Sandbox_WindEnergy_AdvancedPartRarity_tooltip = "Determines how often advanced turbine blades and nacelle kits spawn in loot.",
+    Sandbox_WindEnergy_AdvancedPartRarity_option1 = "Very Rare",
+    Sandbox_WindEnergy_AdvancedPartRarity_option2 = "Rare",
+    Sandbox_WindEnergy_AdvancedPartRarity_option3 = "Common",
+}

@@ -1,0 +1,22 @@
+VERSION = 1,
+
+option WindEnergy.Enabled {
+    page = WindEnergy, translation = WindEnergy_Enabled,
+    type = boolean, default = true,
+}
+option WindEnergy.PowerMultiplier {
+    page = WindEnergy, translation = WindEnergy_PowerMultiplier,
+    type = double, default = 1.0, min = 0.1, max = 5.0,
+}
+option WindEnergy.CraftingDifficulty {
+    page = WindEnergy, translation = WindEnergy_CraftingDifficulty,
+    type = enum, default = 2, numValues = 3,
+}
+option WindEnergy.WindVariability {
+    page = WindEnergy, translation = WindEnergy_WindVariability,
+    type = double, default = 1.0, min = 0.5, max = 2.0,
+}
+option WindEnergy.AdvancedPartRarity {
+    page = WindEnergy, translation = WindEnergy_AdvancedPartRarity,
+    type = enum, default = 2, numValues = 3,
+}

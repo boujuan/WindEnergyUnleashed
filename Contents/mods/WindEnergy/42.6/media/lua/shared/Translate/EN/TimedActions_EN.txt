@@ -1,0 +1,2 @@
+TimedActions_RepairingTurbine = "Repairing Turbine",
+TimedActions_SwappingBlades = "Swapping Blades",

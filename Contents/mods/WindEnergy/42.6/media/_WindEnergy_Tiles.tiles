@@ -1,0 +1,36 @@
+# version 1
+texture = WindEnergy_Tilesheet // Reference textures/World/WindEnergy_Tilesheet.png
+
+tiledef WindEnergy_SmallTurbine_0 576 {
+    tile = 0, // Placeholder sprite index
+    options = ISObject,
+    isThumpable = true,
+    isSolid = true,
+    isSurface = false,
+    WindEnergyType = SmallWooden,
+    BlocksPlacement = true,
+    TileBlockStyle = Solid,
+    alwaysDraw = true,
+    HitByCar = true,
+    StopCar = true,
+    MinimumCarSpeedDmg = 20,
+    DamagedSprite = WindEnergy_Tilesheet 2, // Placeholder damaged state
+    FootstepMaterial = Wood,
+}
+
+tiledef WindEnergy_LargeTurbine_0 577 {
+    tile = 1, // Placeholder sprite index
+    options = ISObject,
+    isThumpable = true,
+    isSolid = true,
+    isSurface = false,
+    WindEnergyType = LargeMetal,
+    BlocksPlacement = true,
+    TileBlockStyle = Solid,
+    alwaysDraw = true,
+    HitByCar = true,
+    StopCar = true,
+    MinimumCarSpeedDmg = 20,
+    DamagedSprite = WindEnergy_Tilesheet 3, // Placeholder damaged state
+    FootstepMaterial = Metal,
+}

@@ -1,0 +1,108 @@
+-- WindEnergyUnleashed Item Definitions
+
+module WindEnergy
+{
+    item WoodenTurbineBase
+    {
+        Type = Normal,
+        DisplayName = Wooden Turbine Base,
+        Icon = WE_WoodBase,
+        Weight = 5.0,
+        Tooltip = The basic structural base for a small wooden wind turbine.,
+        WorldStaticModel = WindEnergy.WoodenTurbineBaseItem,
+    }
+
+    item WoodenTurbineNacelle
+    {
+        Type = Normal,
+        DisplayName = Wooden Turbine Nacelle,
+        Icon = WE_WoodNacelle,
+        Weight = 12.0, -- Adjusted weight (includes generator now)
+        Tooltip = The nacelle assembly for a small wooden wind turbine, containing the generator and rotational mechanism.,
+        WorldStaticModel = WindEnergy.WoodenTurbineNacelleItem,
+    }
+
+    item MetalTurbineBase
+    {
+        Type = Normal,
+        DisplayName = Metal Turbine Base,
+        Icon = WE_MetalBase,
+        Weight = 15.0,
+        Tooltip = The sturdy metal base structure for a large wind turbine.,
+        WorldStaticModel = WindEnergy.MetalTurbineBaseItem,
+    }
+
+    item MetalTurbineNacelle
+    {
+        Type = Normal,
+        DisplayName = Metal Turbine Nacelle,
+        Icon = WE_MetalNacelle,
+        Weight = 25.0, -- Adjusted weight (includes generator now)
+        Tooltip = The nacelle assembly for a large metal wind turbine, containing the generator and rotational mechanism.,
+        WorldStaticModel = WindEnergy.MetalTurbineNacelleItem,
+    }
+
+    item WoodenTurbineBlades
+    {
+        Type = Normal,
+        DisplayName = Wooden Turbine Blades,
+        Icon = WE_WoodBlades,
+        Weight = 3.0,
+        Tooltip = A set of craftable wooden blades for a small wind turbine.,
+        WorldStaticModel = WindEnergy.WoodenTurbineBladesItem,
+    }
+
+    item AdvancedTurbineBlades
+    {
+        Type = Normal,
+        DisplayName = Advanced Turbine Blades,
+        Icon = WE_AdvBlades,
+        Weight = 5.0,
+        Tooltip = High-efficiency turbine blades. Cannot be crafted., -- Note: Non-craftable status determined by lack of recipe.
+        WorldStaticModel = WindEnergy.AdvancedTurbineBladesItem,
+    }
+
+    item BigWoodenTurbineBlades
+    {
+        Type = Normal,
+        DisplayName = Big Wooden Turbine Blades,
+        Icon = WE_BigWoodBlades,
+        Weight = 6.0, -- Heavier than small blades
+        Tooltip = A set of larger, craftable wooden blades designed for bigger wind turbines.,
+        WorldStaticModel = WindEnergy.BigWoodenTurbineBladesItem,
+    }
+
+    item RepurposedGenerator
+    {
+        Type = Normal,
+        DisplayName = Repurposed Generator,
+        Icon = WE_RepurposedGen,
+        Weight = 10.0,
+        Tooltip = A generator modified for use in wind turbines. Can be crafted.,
+        WorldStaticModel = WindEnergy.RepurposedGeneratorItem,
+    }
+
+    item SmallWoodenTurbine
+    {
+        Type = Normal,
+        DisplayName = Small Wooden Wind Turbine,
+        Icon = WE_SmallTurbine,
+        Weight = 20.0, -- Sum of Base + Nacelle + 3*Blades (approx)
+        Tooltip = A small, assembled wooden wind turbine. Used in construction.,
+        PlaceMultiple = FALSE, -- Or TRUE depending on desired placement behavior
+        PlaceOneSound = BuildWoodenLow, -- Placeholder sound
+        WorldObjectSprite = WindEnergy_SmallTurbine_0, -- Reference tiledef
+    }
+
+    item LargeMetalTurbine
+    {
+        Type = Normal,
+        DisplayName = Large Metal Wind Turbine,
+        Icon = WE_LargeTurbine,
+        Weight = 58.0, -- Sum of Base + Nacelle + 3*BigBlades (approx)
+        Tooltip = A large, assembled metal wind turbine. Used in construction.,
+        PlaceMultiple = FALSE,
+        PlaceOneSound = BuildMetalHigh, -- Placeholder sound
+        WorldObjectSprite = WindEnergy_LargeTurbine_0, -- Reference tiledef
+    }
+}

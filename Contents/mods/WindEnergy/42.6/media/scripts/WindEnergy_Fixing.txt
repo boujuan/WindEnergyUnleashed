@@ -1,0 +1,3 @@
+// Placeholder for potential future fixing recipes using the vanilla system.
+// For now, turbine repair is handled via Lua timed actions triggered by context menus.
+module WindEnergy {}

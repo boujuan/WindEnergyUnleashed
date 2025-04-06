@@ -1,0 +1,5 @@
+sound WindTurbineSpinLoopSlow { clip = WE_TurbineSpinLoopSlow.wav, volume = 0.6, pitch = 1.0, loop = true }
+sound WindTurbineSpinLoopFast { clip = WE_TurbineSpinLoopFast.wav, volume = 0.8, pitch = 1.2, loop = true }
+sound WindTurbinePlacement { clip = WE_TurbinePlacement.wav, volume = 1.0 }
+sound WindTurbineRepair { clip = WE_TurbineRepair.wav, volume = 0.8 }
+sound BladeSwap { clip = WE_BladeSwap.wav, volume = 0.7 }

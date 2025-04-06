@@ -1,0 +1,5 @@
+version=1
+title=Wind Energy Unleashed
+description=Placeholder description
+tags=
+visibility=private

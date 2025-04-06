@@ -1,0 +1,11 @@
+ContextMenu_WEU_Inspect = "Inspect",
+ContextMenu_WEU_DisconnectPB = "Disconnect from Power Bank",
+ContextMenu_WEU_ConnectPB = "Connect to Power Bank",
+ContextMenu_WEU_ConnectPB_Select = "Connect to %1", -- %1 = Power Bank Name/Coords
+ContextMenu_WEU_ConnectPB_NoneNearby = "Connect to Power Bank (None Nearby)",
+ContextMenu_WEU_SwapBlades = "Swap Blades",
+ContextMenu_WEU_InstallBlade = "Install %1", -- %1 = Blade Name
+ContextMenu_WEU_NoBlades = "No suitable blades in inventory",
+ContextMenu_WEU_RepairTurbine = "Repair Turbine",
+ContextMenu_WEU_RepairTurbine_NotDamaged = "Repair Turbine (Not Damaged)",
+ContextMenu_WEU_RepairTurbine_SkillNeeded = "Repair Turbine (%1 %2 Required)", -- %1 = Skill Name, %2 = Level

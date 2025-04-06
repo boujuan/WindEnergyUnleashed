@@ -1,0 +1,18 @@
+[VERSION]
+1
+
+[LANGUAGE]
+EN
+
+[CHARACTERISTICS]
+charset = "UTF-8"
+
+[STRINGS]
+
+	IGUI_WEU_TurbineStatusTitle = "Turbine Status",
+	IGUI_WEU_TurbineType = "Turbine Type",
+	IGUI_WEU_PowerOutput = "Power Output",
+	IGUI_WEU_WindSpeed = "Wind Speed",
+	IGUI_WEU_Condition = "Condition",
+	IGUI_WEU_BladeType = "Blades",
+	IGUI_WEU_ConnectedTo = "Connected To",

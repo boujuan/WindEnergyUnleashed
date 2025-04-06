@@ -1,0 +1,32 @@
+item // Add to existing Workshop distribution
+{
+    ProceduralDistributions.list.Workshop.items.add("WindEnergy.AdvancedTurbineBlades");
+    ProceduralDistributions.list.Workshop.items.add("WindEnergy.WoodenTurbineNacelle"); // Corrected reference
+    ProceduralDistributions.list.Workshop.items.add("WindEnergy.MetalTurbineNacelle");     // Corrected reference
+
+    ProceduralDistributions.list.Workshop.weights.add(1); // Low weight for Advanced Blades
+    ProceduralDistributions.list.Workshop.weights.add(1); // Low weight for Wooden Nacelle
+    ProceduralDistributions.list.Workshop.weights.add(1); // Low weight for Metal Nacelle
+}
+
+item // Add to existing Factory distribution
+{
+    ProceduralDistributions.list.Factory.items.add("WindEnergy.AdvancedTurbineBlades");
+    ProceduralDistributions.list.Factory.items.add("WindEnergy.WoodenTurbineNacelle"); // Corrected reference
+    ProceduralDistributions.list.Factory.items.add("WindEnergy.MetalTurbineNacelle"); // Corrected reference
+
+    ProceduralDistributions.list.Factory.weights.add(2);
+    ProceduralDistributions.list.Factory.weights.add(1);
+    ProceduralDistributions.list.Factory.weights.add(2); // Metal slightly more common in factories?
+}
+
+ item // Add to existing Mechanic distribution
+{
+    ProceduralDistributions.list.Mechanic.items.add("WindEnergy.AdvancedTurbineBlades");
+    ProceduralDistributions.list.Mechanic.items.add("WindEnergy.WoodenTurbineNacelle"); // Corrected reference
+    ProceduralDistributions.list.Mechanic.items.add("WindEnergy.MetalTurbineNacelle"); // Corrected reference
+
+    ProceduralDistributions.list.Mechanic.weights.add(1);
+    ProceduralDistributions.list.Mechanic.weights.add(1);
+    ProceduralDistributions.list.Mechanic.weights.add(1);
+}

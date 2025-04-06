@@ -1,0 +1,57 @@
+// WindEnergyUnleashed Model Definitions for World Static Items
+
+model WoodenTurbineBaseItem
+{
+     mesh = WindEnergy/WE_WoodBaseItem.fbx,
+     texture = World/WE_KitTexture.png,
+     scale = 0.6
+}
+
+model WoodenTurbineNacelleItem
+{
+     mesh = WindEnergy/WE_WoodNacelleItem.fbx,
+     texture = World/WE_KitTexture.png,
+     scale = 0.6
+}
+
+model MetalTurbineBaseItem
+{
+     mesh = WindEnergy/WE_MetalBaseItem.fbx,
+     texture = World/WE_KitTexture.png,
+     scale = 0.7
+}
+
+model MetalTurbineNacelleItem
+{
+     mesh = WindEnergy/WE_MetalNacelleItem.fbx,
+     texture = World/WE_KitTexture.png,
+     scale = 0.7
+}
+
+model WoodenTurbineBladesItem
+{
+     mesh = WindEnergy/WE_WoodBladesItem.fbx,
+     texture = World/WE_BladesTexture.png, // Generic blades texture
+     scale = 0.5
+}
+
+model AdvancedTurbineBladesItem
+{
+     mesh = WindEnergy/WE_AdvBladesItem.fbx,
+     texture = World/WE_BladesTexture.png, // Generic blades texture
+     scale = 0.7
+}
+
+model BigWoodenTurbineBladesItem
+{
+     mesh = WindEnergy/WE_BigWoodBladesItem.fbx,
+     texture = World/WE_BladesTexture.png, // Generic blades texture
+     scale = 0.7
+}
+
+model RepurposedGeneratorItem
+{
+     mesh = WindEnergy/WE_RepurposedGenItem.fbx,
+     texture = World/WE_GeneratorTexture.png,
+     scale = 0.7
+}
