@@ -2,18 +2,18 @@
 
 module WindEnergy
 {
-    // Component Crafting Recipes
+    /* Component Crafting Recipes */
 
     recipe Repurpose Generator // Renamed and updated per instructions
     {
         Result:WindEnergy.RepurposedGenerator,
-        Source:Base.Generator=1, // Requires one standard generator (Using Source as per instruction, assuming 1 is implied)
+        Base.Generator=1, // Requires one standard generator
         SkillRequired:Electricity=3,
         SkillRequired:Mechanics=3,
         Require:Base.Screwdriver, // Changed Need:Screwdriver to Require: as it's a tool
         Time:120,
         Category:Engineering, // Or Electronics
-    }
+    },
 
     recipe Craft Wooden Turbine Base
     {
@@ -21,9 +21,9 @@ module WindEnergy
         Time:50.0,
         Category:Carpentry,
         SkillRequired:Carpentry=1,
-        Need:Base.Plank=4,
-        Need:Base.Nails=8,
-    }
+        Base.Plank=4,
+        Base.Nails=8,
+    },
 
     recipe Craft Wooden Turbine Nacelle
     {
@@ -31,12 +31,12 @@ module WindEnergy
         Time:150.0, // Increased time as it includes generator
         Category:Carpentry, // Or Mechanics/Engineering
         SkillRequired:Carpentry=2,Mechanics=1,Electricity=1, // Added Electricity for generator part
-        Need:Base.Plank=3,
-        Need:Base.Nails=6,
-        Need:Base.Screws=4,
-        Need:Base.MetalBar=1,
-        Need:WindEnergy.RepurposedGenerator=1,
-    }
+        Base.Plank=3,
+        Base.Nails=6,
+        Base.Screws=4,
+        Base.MetalBar=1,
+        WindEnergy.RepurposedGenerator=1,
+    },
 
     recipe Craft Wooden Turbine Blades
     {
@@ -44,9 +44,9 @@ module WindEnergy
         Time:60.0,
         Category:Carpentry,
         SkillRequired:Carpentry=2, // Using Carpentry instead of Carving
-        Need:Base.Plank=3,
+        Base.Plank=3,
         Require:Base.Saw, // Tool required
-    }
+    },
 
      recipe Craft Big Wooden Turbine Blades
     {
@@ -54,9 +54,9 @@ module WindEnergy
         Time:90.0, // Longer time
         Category:Carpentry,
         SkillRequired:Carpentry=4, // Higher skill
-        Need:Base.Plank=5, // More planks
+        Base.Plank=5, // More planks
         Require:Base.Saw, // Tool required
-    }
+    },
 
     recipe Craft Metal Turbine Base
     {
@@ -64,11 +64,11 @@ module WindEnergy
         Time:120.0,
         Category:Metalworking,
         SkillRequired:MetalWelding=3,
-        Need:Base.SheetMetal=4,
-        Need:Base.Screws=10, // Using screws as requested, but welding implies maybe bars/pipes? Sticking to request.
+        Base.SheetMetal=4,
+        Base.Screws=10, // Using screws as requested, but welding implies maybe bars/pipes? Sticking to request.
         Require:Base.BlowTorch, // Propane Torch for soldering/welding
-        Require:Base.WeldingMask, // Added comma
-    }
+        Require:Base.WeldingMask,
+    },
 
     recipe Craft Metal Turbine Nacelle
     {
@@ -76,15 +76,15 @@ module WindEnergy
         Time:250.0, // Increased time
         Category:Metalworking, // Or Engineering
         SkillRequired:MetalWelding=4,Mechanics=2,Electricity=2,
-        Need:Base.SheetMetal=3, // Using SheetMetal as requested
-        Need:Base.Screws=8,
-        Need:Base.MetalBar=2,
-        Need:WindEnergy.RepurposedGenerator=1,
+        Base.SheetMetal=3, // Using SheetMetal as requested
+        Base.Screws=8,
+        Base.MetalBar=2,
+        WindEnergy.RepurposedGenerator=1,
         Require:Base.BlowTorch, // Propane Torch for soldering/welding
-        Require:Base.WeldingMask, // Added comma
-    }
+        Require:Base.WeldingMask,
+    },
 
-    // Final Turbine Assembly Recipes
+    /* Final Turbine Assembly Recipes */
 
     recipe Construct Small Wooden Turbine // Renamed for clarity
     {
@@ -95,12 +95,12 @@ module WindEnergy
         CanBuild:1, // Required skill level to see in menu
         OnCreate:WindEnergy_OnPlaceTurbine, // Lua callback
         SkillRequired:Carpentry=3,Mechanics=2,
-        Need:WindEnergy.WoodenTurbineBase=1,
-        Need:WindEnergy.WoodenTurbineNacelle=1,
-        Need:WindEnergy.WoodenTurbineBlades=3,
+        WindEnergy.WoodenTurbineBase=1,
+        WindEnergy.WoodenTurbineNacelle=1,
+        WindEnergy.WoodenTurbineBlades=3,
         Require:Base.Hammer,
-        Require:Base.Screwdriver, // Added comma
-    }
+        Require:Base.Screwdriver,
+    },
 
     recipe Construct Large Metal Turbine // Renamed for clarity
     {
@@ -111,12 +111,12 @@ module WindEnergy
         CanBuild:1, // Required skill level to see in menu
         OnCreate:WindEnergy_OnPlaceTurbine, // Lua callback
         SkillRequired:MetalWelding=5,Mechanics=3,
-        Need:WindEnergy.MetalTurbineBase=1,
-        Need:WindEnergy.MetalTurbineNacelle=1,
-        Need:WindEnergy.BigWoodenTurbineBlades=3, // Using Big Wooden for now, could change later
+        WindEnergy.MetalTurbineBase=1,
+        WindEnergy.MetalTurbineNacelle=1,
+        WindEnergy.BigWoodenTurbineBlades=3, // Using Big Wooden for now, could change later
         Require:Base.Wrench,
         Require:Base.Screwdriver,
         Require:Base.BlowTorch,
-        Require:Base.WeldingMask, // Added comma
-    }
+        Require:Base.WeldingMask,
+    },
 }

@@ -10,10 +10,3 @@ versionMin=42.0
 require=\ISA,\TargetSquareOnLoad
 author=boujuan
 url=https://github.com/boujuan/WindEnergyUnleashed
-
-# Explicit Lua load order
-lua=shared/WindEnergy_Core.lua
-lua=client/WEU_TurbineStatusWindow.lua
-lua=client/WindEnergy_Client.lua
-lua=server/WindEnergy_Server.lua
-lua=shared/WindEnergy_Init.lua
