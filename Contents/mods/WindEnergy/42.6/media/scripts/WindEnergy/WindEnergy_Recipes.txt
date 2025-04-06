@@ -19,7 +19,7 @@ module WindEnergy
     craftRecipe Recipe_Craft_Wooden_Turbine_Base
     {
         timedAction = MakingCarpentry,
-        time = 50.0,
+        time = 50,
         category = Carpentry,
         skillRequired = Carpentry:1,
         inputs {
@@ -34,7 +34,7 @@ module WindEnergy
     craftRecipe Recipe_Craft_Wooden_Turbine_Nacelle
     {
         timedAction = MakingCarpentry,
-        time = 150.0,
+        time = 150,
         category = Carpentry,
         skillRequired = Carpentry:2;Mechanics:1;Electricity:1,
         inputs {
@@ -52,7 +52,7 @@ module WindEnergy
     craftRecipe Recipe_Craft_Wooden_Turbine_Blades
     {
         timedAction = MakingCarpentry,
-        time = 60.0,
+        time = 60,
         category = Carpentry,
         skillRequired = Carpentry:2,
         inputs {
@@ -67,7 +67,7 @@ module WindEnergy
      craftRecipe Recipe_Craft_Big_Wooden_Turbine_Blades
     {
         timedAction = MakingCarpentry,
-        time = 90.0,
+        time = 90,
         category = Carpentry,
         skillRequired = Carpentry:4,
         inputs {
@@ -82,7 +82,7 @@ module WindEnergy
     craftRecipe Recipe_Craft_Metal_Turbine_Base
     {
         timedAction = MakingMetalWelding,
-        time = 120.0,
+        time = 120,
         category = Metalworking,
         skillRequired = MetalWelding:3,
         inputs {
@@ -99,7 +99,7 @@ module WindEnergy
     craftRecipe Recipe_Craft_Metal_Turbine_Nacelle
     {
         timedAction = MakingMetalWelding,
-        time = 250.0,
+        time = 250,
         category = Metalworking,
         skillRequired = MetalWelding:4;Mechanics:2;Electricity:2,
         inputs {
@@ -117,8 +117,8 @@ module WindEnergy
 
     craftRecipe Recipe_Construct_Small_Wooden_Turbine
     {
-        timedAction = MakingCarpentry, // Assuming carpentry action
-        time = 200.0,
+        timedAction = MakingCarpentry,
+        time = 200,
         category = Utilities,
         buildMenu = Construction,
         canBuild = 1,
@@ -132,14 +132,14 @@ module WindEnergy
             item 1 tags[Screwdriver] mode:keep flags[Prop2;MayDegradeLight;NoBrokenItems],
         }
         outputs {
-            // Output is handled by OnCreate placing the tile
+            item 1 WindEnergy.SmallWoodenTurbine,
         }
     }
 
     craftRecipe Recipe_Construct_Large_Metal_Turbine
     {
-        timedAction = MakingMetalWelding, // Assuming metalworking action
-        time = 300.0,
+        timedAction = MakingMetalWelding,
+        time = 300,
         category = Utilities,
         buildMenu = Construction,
         canBuild = 1,
@@ -155,7 +155,7 @@ module WindEnergy
             item 1 tags[WeldingMask] mode:keep flags[NoBrokenItems],
         }
         outputs {
-             // Output is handled by OnCreate placing the tile
+             item 1 WindEnergy.LargeMetalTurbine,
         }
     }
 }
