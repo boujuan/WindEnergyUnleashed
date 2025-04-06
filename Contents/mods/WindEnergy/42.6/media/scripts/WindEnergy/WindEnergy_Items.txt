@@ -104,7 +104,6 @@ module WindEnergy
         Tooltip = A generator modified for use in wind turbines. Can be crafted.,
         Tags = Component;Generator;HasMetal;ShowCondition, // Adjusted Tags
         WorldStaticModel = RepurposedGeneratorItem, // Use WorldStaticModel for item model
-        /* Removed WorldObjectSprite, SoundRadius, SoundVolume, ConditionLowerChanceOneIn as they are not typical for 'Normal' items */
     }
 
     item SmallWoodenTurbine
@@ -119,7 +118,6 @@ module WindEnergy
         WorldObjectSprite = WindEnergy_SmallTurbine_0, // Corrected Sprite Ref
         Tags = HeavyItem;HasMetal;IgnoreZombieDensity;ShowCondition, // Added Tags like ISA PowerBank
         ConditionMax = 100, // Keep ConditionMax
-        /* Removed Count = 1, not needed for Moveable */
     }
 
     item LargeMetalTurbine

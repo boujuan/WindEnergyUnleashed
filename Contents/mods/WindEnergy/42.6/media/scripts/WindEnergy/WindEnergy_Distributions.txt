@@ -1,4 +1,4 @@
-item // Add to existing Workshop distribution
+item
 {
     ProceduralDistributions.list.Workshop.items.add("WindEnergy.AdvancedTurbineBlades");
     ProceduralDistributions.list.Workshop.items.add("WindEnergy.WoodenTurbineNacelle"); // Corrected reference
