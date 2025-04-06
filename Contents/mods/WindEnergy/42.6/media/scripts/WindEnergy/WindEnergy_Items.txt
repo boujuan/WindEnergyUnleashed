@@ -6,134 +6,130 @@ module WindEnergy
     {
         Type = Normal,
         DisplayName = ItemName_WindEnergy.WoodenTurbineBase,
-        DisplayCategory = Engineering, // Added Category
-        Icon = WoodBase, // Corrected Icon Ref (Game adds Item_)
+        DisplayCategory = Engineering,
+        Icon = WoodBase,
         Weight = 5.0,
         Tooltip = Tooltip_Item_WoodenTurbineBase,
-        WorldStaticModel = WoodenTurbineBaseItem, // Corrected Model Ref
-        Tags = Component;Wood, // Added Tags
-        MetalValue = 5, // Added MetalValue (nails)
+        WorldStaticModel = WoodenTurbineBaseItem,
+        Tags = Component;Wood,
+        MetalValue = 5,
     }
 
     item WoodenTurbineNacelle
     {
         Type = Normal,
         DisplayName = ItemName_WindEnergy.WoodenTurbineNacelle,
-        DisplayCategory = Engineering, // Added Category
-        Icon = WoodNacelle, // Corrected Icon Ref
-        // Adjusted weight (includes generator now)
+        DisplayCategory = Engineering,
+        Icon = WoodNacelle,
         Weight = 12.0,
         Tooltip = Tooltip_Item_WoodenTurbineNacelle,
-        WorldStaticModel = WoodenTurbineNacelleItem, // Corrected Model Ref
-        Tags = Component;Wood;HasMetal, // Added Tags
-        MetalValue = 20, // Added MetalValue (screws, bar, generator)
+        WorldStaticModel = WoodenTurbineNacelleItem,
+        Tags = Component;Wood;HasMetal,
+        MetalValue = 20,
     }
 
     item MetalTurbineBase
     {
         Type = Normal,
         DisplayName = ItemName_WindEnergy.MetalTurbineBase,
-        DisplayCategory = Engineering, // Added Category
-        Icon = MetalBase, // Corrected Icon Ref
+        DisplayCategory = Engineering,
+        Icon = MetalBase,
         Weight = 15.0,
         Tooltip = Tooltip_Item_MetalTurbineBase,
-        WorldStaticModel = MetalTurbineBaseItem, // Corrected Model Ref
-        Tags = Component;HasMetal, // Added Tags
-        MetalValue = 40, // Added MetalValue (sheets, screws)
+        WorldStaticModel = MetalTurbineBaseItem,
+        Tags = Component;HasMetal,
+        MetalValue = 40,
     }
 
     item MetalTurbineNacelle
     {
         Type = Normal,
         DisplayName = ItemName_WindEnergy.MetalTurbineNacelle,
-        DisplayCategory = Engineering, // Added Category
-        Icon = MetalNacelle, // Corrected Icon Ref
-        // Adjusted weight (includes generator now)
+        DisplayCategory = Engineering,
+        Icon = MetalNacelle,
         Weight = 25.0,
         Tooltip = Tooltip_Item_MetalTurbineNacelle,
-        WorldStaticModel = MetalTurbineNacelleItem, // Corrected Model Ref
-        Tags = Component;HasMetal, // Added Tags
-        MetalValue = 60, // Added MetalValue (sheets, screws, bars, generator)
+        WorldStaticModel = MetalTurbineNacelleItem,
+        Tags = Component;HasMetal,
+        MetalValue = 60,
     }
 
     item WoodenTurbineBlades
     {
         Type = Normal,
         DisplayName = ItemName_WindEnergy.WoodenTurbineBlades,
-        DisplayCategory = Components, // Added Category
-        Icon = WoodBlade, // Corrected Icon Ref
+        DisplayCategory = Components,
+        Icon = WoodBlade,
         Weight = 3.0,
         Tooltip = Tooltip_Item_WoodenTurbineBlades,
-        WorldStaticModel = WoodenTurbineBladesItem, // Corrected Model Ref
-        Tags = Component;Wood, // Added Tags
+        WorldStaticModel = WoodenTurbineBladesItem,
+        Tags = Component;Wood,
     }
 
     item AdvancedTurbineBlades
     {
         Type = Normal,
         DisplayName = ItemName_WindEnergy.AdvancedTurbineBlades,
-        DisplayCategory = Components, // Added Category
-        Icon = AdvBlade, // Corrected Icon Ref
+        DisplayCategory = Components,
+        Icon = AdvBlade,
         Weight = 5.0,
         Tooltip = Tooltip_Item_AdvancedTurbineBlades,
-        WorldStaticModel = AdvancedTurbineBladesItem, // Corrected Model Ref
-        Tags = Component;HasMetal, // Added Tags (Assuming composite involves some metal/advanced parts)
-        MetalValue = 10, // Added arbitrary MetalValue
+        WorldStaticModel = AdvancedTurbineBladesItem,
+        Tags = Component;HasMetal,
+        MetalValue = 10,
     }
 
     item BigWoodenTurbineBlades
     {
         Type = Normal,
         DisplayName = ItemName_WindEnergy.BigWoodenTurbineBlades,
-        DisplayCategory = Components, // Added Category
-        Icon = WoodBlade, // Corrected Icon Ref (Using same icon as small for now)
-        // Heavier than small blades
+        DisplayCategory = Components,
+        Icon = WoodBlade,
         Weight = 6.0,
         Tooltip = Tooltip_Item_BigWoodenTurbineBlades,
-        WorldStaticModel = BigWoodenTurbineBladesItem, // Corrected Model Ref
-        Tags = Component;Wood, // Added Tags
+        WorldStaticModel = BigWoodenTurbineBladesItem,
+        Tags = Component;Wood,
     }
 
     item RepurposedGenerator
     {
         Type = Normal,
         DisplayName = ItemName_WindEnergy.RepurposedGenerator,
-        DisplayCategory = Electronics, // Added Category
-        Icon = RepurposedGen, // Corrected Icon Ref
-        Weight = 10.0, // Reduced weight, 40 seemed excessive for a component
+        DisplayCategory = Electronics,
+        Icon = RepurposedGen,
+        Weight = 10.0,
         ConditionMax = 100,
-        MetalValue = 15, // Added placeholder MetalValue
+        MetalValue = 15,
         Tooltip = Tooltip_Item_RepurposedGenerator,
-        Tags = Component;HasMetal, // Added Tags
-        WorldStaticModel = RepurposedGeneratorItem, // Added Model Ref
+        Tags = Component;HasMetal,
+        WorldStaticModel = RepurposedGeneratorItem,
     }
 
     item SmallWoodenTurbine
     {
-        Type = Moveable, // Correct Type
+        Type = Moveable,
         DisplayName = ItemName_WindEnergy.SmallWoodenTurbine,
-        DisplayCategory = Utilities, // Changed Category
-        Icon = SmallTurbine, // Corrected Icon Ref
-        Weight = 20.0, // Keep Weight
+        DisplayCategory = Utilities,
+        Icon = SmallTurbine,
+        Weight = 20.0,
         Tooltip = Tooltip_Item_SmallWoodenTurbine,
-        PlaceOneSound = BuildWoodenLow, // Keep Sound
-        WorldObjectSprite = WindEnergy_SmallTurbine_0, // Corrected Sprite Ref
-        Tags = HeavyItem;HasMetal;IgnoreZombieDensity;ShowCondition, // Added Tags like ISA PowerBank
-        ConditionMax = 100, // Keep ConditionMax
+        PlaceOneSound = BuildWoodenLow,
+        WorldObjectSprite = WindEnergy_SmallTurbine_0,
+        Tags = HeavyItem;HasMetal;IgnoreZombieDensity;ShowCondition,
+        ConditionMax = 100,
     }
 
     item LargeMetalTurbine
     {
-        Type = Moveable, // Correct Type
+        Type = Moveable,
         DisplayName = ItemName_WindEnergy.LargeMetalTurbine,
-        DisplayCategory = Utilities, // Changed Category
-        Icon = LargeTurbine, // Corrected Icon Ref
+        DisplayCategory = Utilities,
+        Icon = LargeTurbine,
         Weight = 58.0,
-        // Sum of Base + Nacelle + 3*BigBlades (approx)
         Tooltip = Tooltip_Item_LargeMetalTurbine,
-        PlaceOneSound = BuildMetalHigh, // Keep Sound
-        WorldObjectSprite = WindEnergy_LargeTurbine_0, // Corrected Sprite Ref
-        Tags = HeavyItem;HasMetal;IgnoreZombieDensity;ShowCondition, // Added Tags like ISA PowerBank
-        ConditionMax = 150, // Added ConditionMax based on Lua Core definition
+        PlaceOneSound = BuildMetalHigh,
+        WorldObjectSprite = WindEnergy_LargeTurbine_0,
+        Tags = HeavyItem;HasMetal;IgnoreZombieDensity;ShowCondition,
+        ConditionMax = 150,
     }
 }

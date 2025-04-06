@@ -1,5 +1,5 @@
 Sandbox_EN = {
-    Sandbox_WindEnergy = "Wind Energy Unleashed", -- Page Name
+    Sandbox_WindEnergy = "Wind Energy Unleashed",
 
     Sandbox_WindEnergy_Enabled = "Enable Wind Energy Mod",
     Sandbox_WindEnergy_Enabled_tooltip = "If enabled, wind turbines can be crafted and used.",

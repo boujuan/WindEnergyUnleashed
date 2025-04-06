@@ -1,31 +1,28 @@
 item
 {
     ProceduralDistributions.list.Workshop.items.add("WindEnergy.AdvancedTurbineBlades");
-    ProceduralDistributions.list.Workshop.items.add("WindEnergy.WoodenTurbineNacelle"); // Corrected reference
-    ProceduralDistributions.list.Workshop.items.add("WindEnergy.MetalTurbineNacelle");     // Corrected reference
-
-    ProceduralDistributions.list.Workshop.weights.add(1); // Low weight for Advanced Blades
-    ProceduralDistributions.list.Workshop.weights.add(1); // Low weight for Wooden Nacelle
-    ProceduralDistributions.list.Workshop.weights.add(1); // Low weight for Metal Nacelle
+    ProceduralDistributions.list.Workshop.items.add("WindEnergy.WoodenTurbineNacelle");
+    ProceduralDistributions.list.Workshop.items.add("WindEnergy.MetalTurbineNacelle");
+    ProceduralDistributions.list.Workshop.weights.add(1);
+    ProceduralDistributions.list.Workshop.weights.add(1);
+    ProceduralDistributions.list.Workshop.weights.add(1);
 }
 
-item // Add to existing Factory distribution
+item
 {
     ProceduralDistributions.list.Factory.items.add("WindEnergy.AdvancedTurbineBlades");
-    ProceduralDistributions.list.Factory.items.add("WindEnergy.WoodenTurbineNacelle"); // Corrected reference
-    ProceduralDistributions.list.Factory.items.add("WindEnergy.MetalTurbineNacelle"); // Corrected reference
-
+    ProceduralDistributions.list.Factory.items.add("WindEnergy.WoodenTurbineNacelle");
+    ProceduralDistributions.list.Factory.items.add("WindEnergy.MetalTurbineNacelle");
     ProceduralDistributions.list.Factory.weights.add(2);
     ProceduralDistributions.list.Factory.weights.add(1);
-    ProceduralDistributions.list.Factory.weights.add(2); // Metal slightly more common in factories?
+    ProceduralDistributions.list.Factory.weights.add(2);
 }
 
- item // Add to existing Mechanic distribution
+ item
 {
     ProceduralDistributions.list.Mechanic.items.add("WindEnergy.AdvancedTurbineBlades");
-    ProceduralDistributions.list.Mechanic.items.add("WindEnergy.WoodenTurbineNacelle"); // Corrected reference
-    ProceduralDistributions.list.Mechanic.items.add("WindEnergy.MetalTurbineNacelle"); // Corrected reference
-
+    ProceduralDistributions.list.Mechanic.items.add("WindEnergy.WoodenTurbineNacelle");
+    ProceduralDistributions.list.Mechanic.items.add("WindEnergy.MetalTurbineNacelle");
     ProceduralDistributions.list.Mechanic.weights.add(1);
     ProceduralDistributions.list.Mechanic.weights.add(1);
     ProceduralDistributions.list.Mechanic.weights.add(1);

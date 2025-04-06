@@ -1,5 +1,4 @@
 ItemName_EN = {
-    -- Components
     ItemName_WindEnergy.WoodenTurbineBase = "Wooden Turbine Base",
     ItemName_WindEnergy.WoodenTurbineNacelle = "Wooden Turbine Nacelle",
     ItemName_WindEnergy.MetalTurbineBase = "Metal Turbine Base",
@@ -8,8 +7,6 @@ ItemName_EN = {
     ItemName_WindEnergy.AdvancedTurbineBlades = "Advanced Turbine Blades",
     ItemName_WindEnergy.BigWoodenTurbineBlades = "Big Wooden Turbine Blades",
     ItemName_WindEnergy.RepurposedGenerator = "Repurposed Generator",
-
-    -- Placeable Turbines (Items)
     ItemName_WindEnergy.SmallWoodenTurbine = "Small Wooden Wind Turbine",
     ItemName_WindEnergy.LargeMetalTurbine = "Large Metal Wind Turbine",
 }

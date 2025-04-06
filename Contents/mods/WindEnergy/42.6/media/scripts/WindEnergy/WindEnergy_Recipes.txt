@@ -1,12 +1,8 @@
 module WindEnergy
 {
-    /* Component Crafting Recipes */
 
     craftRecipe Recipe_Repurpose_Generator
     {
-        // Requires one standard generator
-        // Changed Need:Screwdriver to Require: as it's a tool
-        // Or Electronics category
         timedAction = MakingElectrical,
         time = 120,
         category = Engineering,
@@ -37,9 +33,6 @@ module WindEnergy
 
     craftRecipe Recipe_Craft_Wooden_Turbine_Nacelle
     {
-        // Increased time as it includes generator
-        // Or Mechanics/Engineering category
-        // Added Electricity for generator part
         timedAction = MakingCarpentry,
         time = 150.0,
         category = Carpentry,
@@ -58,8 +51,6 @@ module WindEnergy
 
     craftRecipe Recipe_Craft_Wooden_Turbine_Blades
     {
-        // Using Carpentry instead of Carving
-        // Tool required
         timedAction = MakingCarpentry,
         time = 60.0,
         category = Carpentry,
@@ -75,10 +66,6 @@ module WindEnergy
 
      craftRecipe Recipe_Craft_Big_Wooden_Turbine_Blades
     {
-        // Longer time
-        // Higher skill
-        // More planks
-        // Tool required
         timedAction = MakingCarpentry,
         time = 90.0,
         category = Carpentry,
@@ -94,8 +81,6 @@ module WindEnergy
 
     craftRecipe Recipe_Craft_Metal_Turbine_Base
     {
-        // Using screws as requested, but welding implies maybe bars/pipes? Sticking to request.
-        // Propane Torch for soldering/welding
         timedAction = MakingMetalWelding,
         time = 120.0,
         category = Metalworking,
@@ -113,10 +98,6 @@ module WindEnergy
 
     craftRecipe Recipe_Craft_Metal_Turbine_Nacelle
     {
-        // Increased time
-        // Or Engineering category
-        // Using SheetMetal as requested
-        // Propane Torch for soldering/welding
         timedAction = MakingMetalWelding,
         time = 250.0,
         category = Metalworking,
@@ -134,16 +115,9 @@ module WindEnergy
         }
     }
 
-    /* Final Turbine Assembly Recipes */
-
     recipe Recipe_Construct_Small_Wooden_Turbine
     {
-        // Keep time or adjust for construction
-        // Construction category
-        // Add to construction menu
-        // Required skill level to see in menu
-        // Lua callback
-        Result:WindEnergy.SmallWoodenTurbine, // Changed to ITEM name
+        Result:WindEnergy.SmallWoodenTurbine,
         Time:200.0,
         Category:Utilities,
         BuildMenu:Construction,
@@ -160,13 +134,7 @@ module WindEnergy
 
     recipe Recipe_Construct_Large_Metal_Turbine
     {
-        // Keep time or adjust for construction
-        // Construction category
-        // Add to construction menu
-        // Required skill level to see in menu
-        // Lua callback
-        // Using Big Wooden for now, could change later
-        Result:WindEnergy.LargeMetalTurbine, // Changed to ITEM name
+        Result:WindEnergy.LargeMetalTurbine,
         Time:300.0,
         Category:Utilities,
         BuildMenu:Construction,
