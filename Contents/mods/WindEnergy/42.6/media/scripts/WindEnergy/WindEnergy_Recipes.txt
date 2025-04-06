@@ -115,39 +115,47 @@ module WindEnergy
         }
     }
 
-    recipe Recipe_Construct_Small_Wooden_Turbine
+    craftRecipe Recipe_Construct_Small_Wooden_Turbine
     {
-        Result:WindEnergy.SmallWoodenTurbine,
-        Time:200.0,
-        Category:Utilities,
-        BuildMenu:Construction,
-        CanBuild:1,
-        OnCreate:WindEnergy_OnPlaceTurbine,
-        SkillRequired:Carpentry=3,
-        SkillRequired:Mechanics=2,
-        WindEnergy.WoodenTurbineBase=1,
-        WindEnergy.WoodenTurbineNacelle=1,
-        WindEnergy.WoodenTurbineBlades=3,
-        Require:Base.Hammer,
-        Require:Base.Screwdriver,
+        timedAction = MakingCarpentry, // Assuming carpentry action
+        time = 200.0,
+        category = Utilities,
+        buildMenu = Construction,
+        canBuild = 1,
+        onCreate = WindEnergy_OnPlaceTurbine,
+        skillRequired = Carpentry:3;Mechanics:2,
+        inputs {
+            item 1 [WindEnergy.WoodenTurbineBase] mode:destroy,
+            item 1 [WindEnergy.WoodenTurbineNacelle] mode:destroy,
+            item 3 [WindEnergy.WoodenTurbineBlades] mode:destroy,
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight;NoBrokenItems],
+            item 1 tags[Screwdriver] mode:keep flags[Prop2;MayDegradeLight;NoBrokenItems],
+        }
+        outputs {
+            // Output is handled by OnCreate placing the tile
+        }
     }
 
-    recipe Recipe_Construct_Large_Metal_Turbine
+    craftRecipe Recipe_Construct_Large_Metal_Turbine
     {
-        Result:WindEnergy.LargeMetalTurbine,
-        Time:300.0,
-        Category:Utilities,
-        BuildMenu:Construction,
-        CanBuild:1,
-        OnCreate:WindEnergy_OnPlaceTurbine,
-        SkillRequired:MetalWelding=5,
-        SkillRequired:Mechanics=3,
-        WindEnergy.MetalTurbineBase=1,
-        WindEnergy.MetalTurbineNacelle=1,
-        WindEnergy.BigWoodenTurbineBlades=3,
-        Require:Base.Wrench,
-        Require:Base.Screwdriver,
-        Require:Base.BlowTorch,
-        Require:Base.WeldingMask,
+        timedAction = MakingMetalWelding, // Assuming metalworking action
+        time = 300.0,
+        category = Utilities,
+        buildMenu = Construction,
+        canBuild = 1,
+        onCreate = WindEnergy_OnPlaceTurbine,
+        skillRequired = MetalWelding:5;Mechanics:3,
+        inputs {
+            item 1 [WindEnergy.MetalTurbineBase] mode:destroy,
+            item 1 [WindEnergy.MetalTurbineNacelle] mode:destroy,
+            item 3 [WindEnergy.BigWoodenTurbineBlades] mode:destroy,
+            item 1 tags[Wrench] mode:keep flags[Prop1;MayDegradeLight;NoBrokenItems],
+            item 1 tags[Screwdriver] mode:keep flags[Prop2;MayDegradeLight;NoBrokenItems],
+            item 1 tags[BlowTorch] mode:keep flags[MayDegradeLight;NoBrokenItems],
+            item 1 tags[WeldingMask] mode:keep flags[NoBrokenItems],
+        }
+        outputs {
+             // Output is handled by OnCreate placing the tile
+        }
     }
 }
